@@ -7,7 +7,7 @@ const  Row = () =>{
     }
 
     return (
-        <div className='row' onClick={handleClick}>
+        <div className='row row1' onClick={handleClick}>
             kobe
         </div>
     )

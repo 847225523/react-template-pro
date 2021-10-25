@@ -6,7 +6,7 @@ const testPng = require('@/assets/c4ff.png')
     return (
         <div>
         {props.children}
-            <h1>哈哈</h1>
+            <h1>哈哈111</h1>
             <img src={testPng}  style={{width:200,height:200}}/>
             <Grid/>
         </div>

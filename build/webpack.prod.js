@@ -15,7 +15,9 @@ module.exports = merge(common,{
       minimize: true,
       minimizer: [
         new CssMinimizerPlugin(),
-        new TerserPlugin(),
+        new TerserPlugin({
+          extractComments:false //不让生成license.txt文件
+        }),
       ],
         moduleIds: 'deterministic',
         splitChunks: {
@@ -33,6 +35,8 @@ module.exports = merge(common,{
       },
     plugins:[
         new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({
+          filename: 'css/[name].[hash:8].css'
+        }),
     ]
 })

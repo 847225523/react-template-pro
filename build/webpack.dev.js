@@ -15,6 +15,7 @@ module.exports = merge(common,{
         //     changeOrigin: true,
         // }
     },
+},
     plugins:[
         new ReactRefreshWebpackPlugin()
     ]
