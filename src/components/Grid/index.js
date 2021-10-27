@@ -1,7 +1,7 @@
 import React from 'react'
-import { css, cx } from '@emotion/css'
+import { css } from '@emotion/css'
 import Row from '@/components/Row'
-import style from './index.scss'
+import './index.scss'
 export default function Grid () {
     return (
         <div className='grid'>

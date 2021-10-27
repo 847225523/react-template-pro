@@ -1,10 +1,10 @@
 import React from 'react'
 
-import style from './style.less'
+import './style.less'
 const Row = () => {
     const handleClick = () => {
         console.log('aaa')
-    console.log('cc')
+        console.log('cc')
     }
 
     return (
