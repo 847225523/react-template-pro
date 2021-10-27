@@ -4,6 +4,7 @@ import style from './style.less'
 const Row = () => {
     const handleClick = () => {
         console.log('aaa')
+    console.log('cc')
     }
 
     return (
