@@ -1,7 +1,7 @@
 import React from 'react'
 
 import style from './style.less'
-const  Row = () =>{
+const Row = () => {
     const handleClick = () => {
         console.log('aaa')
     }
