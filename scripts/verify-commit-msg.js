@@ -1,10 +1,4 @@
-// git 提交信息校验
-// from  https://github.com/vuejs/vue/blob/dev/scripts/verify-commit-msg.js
-
-const chalk = require('chalk')
-console.log(chalk, 'chalk')
-const msgPath = process.env.GIT_PARAMS
-const msg = require('fs').readFileSync(msgPath, 'utf-8').trim()
+const msg = require('fs').readFileSync('.git/COMMIT_EDITMSG', 'utf-8').trim()
 
 const commitRE = /^(revert: )?(feat|fix|polish|docs|style|refactor|perf|test|workflow|ci|chore|types|build)(\(.+\))?: .{1,50}/
 
@@ -25,4 +19,6 @@ if (!commitRE.test(msg)) {
       )
     )
     process.exit(1)
+} else {
+    console.log('git commit信息校验通过')
 }
