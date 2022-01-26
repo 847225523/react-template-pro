@@ -1,5 +1,5 @@
 import React, { lazy } from 'react'
-import { Route, Redirect } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import { routerConfig } from './config'
 
 // eslint-disable-next-line react/prop-types

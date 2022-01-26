@@ -1,5 +1,5 @@
 import React from 'react'
-import { Menu, Layout } from 'antd'
+import { Layout } from 'antd'
 
 const { Sider } = Layout
 
