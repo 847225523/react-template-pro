@@ -1,15 +1,28 @@
-import React from 'react'
+import React, { Suspense } from 'react'
+import 'antd/dist/antd.css'
+import { HashRouter } from 'react-router-dom'
+import zhCN from 'antd/lib/locale/zh_CN'
+import { ConfigProvider, Skeleton } from 'antd'
+import { routerConfig } from '@/router/config'
+import Routes from '@/router'
+import Container from '@/components/Layout/Container'
 
-import Grid from './components/Grid'
-const testPng = require('@/assets/c4ff.png')
 const App = (props) => {
     return (
-        <div>
-            <h1>哈哈111</h1>
-            <div>111</div>
-            <img src={testPng} style={{ width: 200, height: 200 }} />
-            <Grid />
-        </div>
+        <ConfigProvider locale={zhCN}>
+            <HashRouter>
+                <Container>
+                    <Suspense fallback={<Skeleton />}>
+                        <Routes />
+                    </Suspense>
+                </Container>
+            </HashRouter>
+            {/* <Container>
+                <Suspense fallback={<Skeleton />}>
+                    <div>111</div>
+                </Suspense>
+            </Container> */}
+        </ConfigProvider>
     )
 }
 export default App

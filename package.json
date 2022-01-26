@@ -22,19 +22,21 @@
   },
   "homepage": "https://github.com/847225523/react-template-pro#readme",
   "dependencies": {
+    "@emotion/css": "^11.5.0",
+    "antd": "^4.16.13",
+    "axios": "^0.24.0",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-cache-route": "^1.11.1",
     "react-router-dom": "^5.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-react": "^7.14.5",
-    "@emotion/css": "^11.5.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.1",
     "autoprefixer": "^10.3.7",
-    "axios": "^0.24.0",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.4.0",
@@ -56,6 +58,7 @@
     "sass-loader": "^12.2.0",
     "style-loader": "^3.3.0",
     "stylelint": "^14.0.1",
+    "chalk": "^4.1.0",
     "stylelint-config-standard": "^23.0.0",
     "terser-webpack-plugin": "^5.2.4",
     "webpack": "^5.58.2",
@@ -65,7 +68,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "npm run lint",
+      "commit-msg": "node scripts/verify-commit-msg.js"
     }
   }
 }
