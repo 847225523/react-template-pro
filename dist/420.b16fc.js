@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_template_pro=self.webpackChunkreact_template_pro||[]).push([[420],{1420:function(e,t,a){a.r(t);var n,r=a(7294),c=function(){return r.createElement("div",{className:"option-two"},"选择2",r.createElement("div",{className:"option"},"zhw"))};n=c,t.default=c,$RefreshReg$(n,"OptionTwo")}}]);

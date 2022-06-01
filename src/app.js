@@ -3,7 +3,6 @@ import 'antd/dist/antd.css'
 import { HashRouter } from 'react-router-dom'
 import zhCN from 'antd/lib/locale/zh_CN'
 import { ConfigProvider, Skeleton } from 'antd'
-// import { routerConfig } from '@/router/config'
 import Routes from '@/router'
 import Container from '@/components/Layout/Container'
 
@@ -17,11 +16,6 @@ const App = (props) => {
                     </Suspense>
                 </Container>
             </HashRouter>
-            {/* <Container>
-                <Suspense fallback={<Skeleton />}>
-                    <div>111</div>
-                </Suspense>
-            </Container> */}
         </ConfigProvider>
     )
 }
