@@ -8,6 +8,7 @@ const { Content } = Layout
 
 const Container = (props) => {
     const { children } = props
+    console.log(children, 'children')
     return (
         <Layout className="xm-container">
             <Sider />

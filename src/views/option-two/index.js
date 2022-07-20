@@ -1,12 +1,18 @@
-import React from 'react'
+// import React from 'react'
+// import ClickHoc from '@/components/HOC/ClickHoc'
 // import './style.less'
 
-const OptionTwo = () => {
-    return (
-        <div className='option-two'>
-            选择2
-            <div className='option'>zhw</div>
-        </div>
-    )
-}
-export default OptionTwo
+// @ClickHoc
+// class Index extends React.Component{
+//     render(){
+//       return <div className='index'>
+//         <p>hello，world</p>
+//         <button>组件内部点击</button>
+//      </div>
+//     }
+//  }
+//  export default ()=>{
+//    return <div className='box'>
+//       <Index />
+//       <button>组件外部点击</button>
+//    </div>
